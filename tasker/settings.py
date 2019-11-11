@@ -25,7 +25,7 @@ SECRET_KEY = 'am3y^@vpam^-kg1gr=^^zti2$azcoloy2=c6$w35*q+t7+wwjb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rsoi-petrov.herokuapp.com']
 
 
 # Application definition
