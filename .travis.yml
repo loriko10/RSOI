@@ -5,8 +5,9 @@ python:
 install:
   - pip install -r requirements.txt
 # command to run tests
-#before_script: # => 6
- # - psql -c "CREATE USER root WITH PASSWORD 'passme';" -U postgres
- # - psql -c "ALTER USER root CREATEDB;" -U postgres
+before_script: # => 6
+  - sudo -i -u postgres
+  - psql -c "CREATE USER root WITH PASSWORD 'passme';" -U postgres
+  - psql -c "ALTER USER root CREATEDB;" -U postgres
 script:
   - python manage.py test
