@@ -3,11 +3,10 @@ python:
   - "2.7"
 # command to install dependencies
 install:
-  - virtualenv testenv 
-  - source testenv/bin/activate
   - pip install -r requirements.txt
 # command to run tests
 before_script: # => 6
+  - source testenv/bin/activate
   - sudo -i -u postgres
   - psql -c "CREATE USER root WITH PASSWORD 'passme';" -U postgres
   - psql -c "ALTER USER root CREATEDB;" -U postgres
