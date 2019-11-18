@@ -18,6 +18,7 @@ traitlets==4.2.2
 setuptools==41.6.0
 ez-setup==0.9
 wcwidth==0.1.7
+wsgiref==0.1.2
 selenium==2.53.1
 
 
