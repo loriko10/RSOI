@@ -19,5 +19,5 @@ wcwidth==0.1.7
 wsgiref==0.1.2
 selenium==2.53.1
 python==2.7.15
-libpq-dev==12.0-1
+libpq-dev==12.0
 
