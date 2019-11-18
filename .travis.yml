@@ -14,9 +14,9 @@ before_script: # => 6
   - psql -c "ALTER USER root CREATEDB;" -U postgres
 script:
   - python manage.py test
-deploy:
-  provider: heroku
-  api_key: 67ff2354-90c5-49a2-a22b-d14a7544f37d
-  app: rsoi-petrov
-  on:
-    repo: loriko10/RSOI
+#deploy:
+#  provider: heroku
+#  api_key: 67ff2354-90c5-49a2-a22b-d14a7544f37d
+#  app: rsoi-petrov
+#  on:
+#    repo: loriko10/RSOI
